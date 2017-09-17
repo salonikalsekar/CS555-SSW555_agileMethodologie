@@ -4,5 +4,5 @@ This is a repository for Course CS555/ SSW555- Agile Methodologies for Software 
 
 The Team members include:
 
-Akanksha Chatra, Sravanthi Kanchi, Ach Angarekhanhalli Vishwanath and Saloni Kalsekar
+Akanksha Chatra(AC), Sravanthi Kanchi(SK), Ach Angarekhanhalli Vishwanath(AV) and Saloni Kalsekar(SSK)
 
