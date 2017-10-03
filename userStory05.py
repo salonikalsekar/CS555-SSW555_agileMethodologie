@@ -113,7 +113,7 @@ def MarriageBeforeDeath(list_fam, list_indi):
     if(len(marrBeforeDeath_list) == 0):
         print("In this user story all the families have their marriage dates before the death dates of their husband/wife.")
     else:
-        print("These families have their marriage dates occuring after the death date:")
+        print("The families with marriage dates after the death date:")
         print(marrBeforeDeath_list)
 
 def main(fileName):
