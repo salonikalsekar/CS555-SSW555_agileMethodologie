@@ -105,11 +105,11 @@ def MarriageBeforeDeath(list_fam, list_indi):
         if(getDeathDate(list_indi, i[1]) != None):
             if(i[3] > getDeathDate(list_indi, i[1])):
                 marrBeforeDeath_list.append(i[0])
-                print("The family " + i[0] + " have marriage dates after the death dates of " + i[1] + ".")
+                print("The family " + i[0] + " have marriage dates after the death dates of " + i[1])
         if(getDeathDate(list_indi, i[2]) != None):
             if(i[3] > getDeathDate(list_indi, i[2])):
                 marrBeforeDeath_list.append(i[0])
-                print("The family " + i[0] + " have marriage dates after the death dates of " + i[2] + ".")
+                print("The family " + i[0] + " have marriage dates after the death dates of " + i[2])
     if(len(marrBeforeDeath_list) == 0):
         print("In this user story all the families have their marriage dates before the death dates of their husband/wife.")
     else:
