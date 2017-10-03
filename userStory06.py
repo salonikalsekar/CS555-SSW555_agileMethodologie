@@ -105,18 +105,18 @@ def DivorceBeforeDeath(list_fam, list_indi):
             if(getDeathDate(list_indi, i[1]) != None):
                 if(i[4] > getDeathDate(list_indi, i[1])):
                     divBefDeath_list.append(i[0])
-                    print("The family " + i[0] + " have divorce dates after the death dates of " + i[1] + ".")
+                    print("The family " + i[0] + " have divorce dates after the death dates of " + i[1])
             if(getDeathDate(list_indi, i[2]) != None):
                 if(i[4] > getDeathDate(list_indi, i[2])):
                     divBefDeath_list.append(i[0])
-                    print("The family " + i[0] + " have divorce dates after the death dates of " + i[2] + ".")
+                    print("The family " + i[0] + " have divorce dates after the death dates of " + i[2])
     if(len(divBefDeath_list) == 0):
-        print("Here, all the families have their divorce dates occuring before the death dates of their husband/wife.")
-        print()
+        print("All the families have their divorce dates occuring before the death dates of their husband/wife.")
+        
     else:
-        print("These families have their divorce dates after the death date: ")
+        print("The families with divorce dates after the death date: ")
         print(divBefDeath_list)
-        print()
+        
 
 def main(fileName):
     list_indi, list_fam = parseTheFile(fileName)
