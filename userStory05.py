@@ -121,6 +121,5 @@ def main(fileName):
     list_indi.sort()
     list_fam.sort()
     MarriageBeforeDeath(list_fam, list_indi)
-
 main('C:/Users/Lenovo/Desktop/Homewrk_4_Achal/Achal Project01.ged')
 
