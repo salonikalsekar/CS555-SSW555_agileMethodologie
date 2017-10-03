@@ -55,7 +55,6 @@ def getCurrDate():
     c_date = str(datetime.date.today())
     return c_date
 
-    return op_list
 
 def fam_list():
     o_list = [0 for i in range(6)]
