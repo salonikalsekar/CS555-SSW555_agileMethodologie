@@ -105,16 +105,16 @@ def DivorceBeforeDeath(list_fam, list_indi):
             if(getDeathDate(list_indi, i[1]) != None):
                 if(i[4] > getDeathDate(list_indi, i[1])):
                     divBefDeath_list.append(i[0])
-                    print("The family " + i[0] + " has divorce date occuring after the death date of " + i[1] + ".")
+                    print("The family " + i[0] + " have divorce dates after the death dates of " + i[1] + ".")
             if(getDeathDate(list_indi, i[2]) != None):
                 if(i[4] > getDeathDate(list_indi, i[2])):
                     divBefDeath_list.append(i[0])
-                    print("The family " + i[0] + " has divorce date occuring after the death date of " + i[2] + ".")
+                    print("The family " + i[0] + " have divorce dates after the death dates of " + i[2] + ".")
     if(len(divBefDeath_list) == 0):
-        print("In this user story all the families have their divorce dates occuring before the death dates of the Spouses.")
+        print("Here, all the families have their divorce dates occuring before the death dates of their husband/wife.")
         print()
     else:
-        print("These families have their divorce dates occuring after the death date of either of the Spouses: ")
+        print("These families have their divorce dates after the death date: ")
         print(divBefDeath_list)
         print()
 
