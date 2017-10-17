@@ -104,21 +104,6 @@ def getLastName(s):
         if(i != '/'):
             t += i
     return t
-
-
-def lessThan150(list_indi):
-    list1 = []
-    for i in list_indi:
-        if(getAgeByID(list_indi, i[0]) >= 150):
-            list1.append(i[0])
-            print("US07: Individual " + i[0] + " has lived more than or equal to 150 years.")
-    if(len(list1)==0):
-        print("US07: All Individuals have lived for a number of years permitted naturally.")
-        print()
-    else:
-        print("US07: The following Individuals have lived for equal to or more than 150 years of age: ", end = '')
-        print(list1)
-        print()
         
 
 
