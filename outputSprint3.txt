@@ -1,0 +1,73 @@
+Python 2.7.14rc1 (v2.7.14rc1:c707893, Aug 27 2017, 00:09:00) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+========= RESTART: C:\SEM 3\Agile\9\Sprint3\finalTestCaseSprint3.py =========
+US01: There are no dates before the current date :)
+US02: There is no individual having birth dates after marriage dates :)
+US03: There is no one having birthdate after death date :)
+US04: There is no one having marriage dates after divorce date :)
+US05: There are no marriages after the death dates :)
+US06: There are no divorce after the death dates :)
+US07: All have ages less than 150 :)
+US08: All children have been born after the marriage of their parents :)
+US09: There is no one who was born after their parent's death
+ERROR: INDIVIDUAL: US10: This individual with ID @I6@ married before he/she turned 14 in family with ID @F2@
+ERROR: INDIVIDUAL: US10: This individual with ID @I9@ married before he/she turned 14 in family with ID @F3@
+US10: The individuals mentioned below married before they turned 14: 
+['@I6@', '@I9@']
+US11: The individual in the given gedcom file is not involved in Bigamy.
+US12: Both mother and father are not too old
+US13: All the Siblings have correct spacing
+Us14: There are no families with more than 5 kids.
+US15: There are no families with 15 or more siblings.
+"ERROR: FAMILY: US16: Family @F10@ has one or more male members with different last name(s).
+ERROR: FAMILY: US16: Families which have one or more male members with different last name(s): 
+['@F10@']
+US21: There are no individuals with incorrect gender roles.
+US22: The IDs in the list are unique.
+US23: all Individuals have unique name and birth date accordingly .
+US24: All Families are unique.
+('ERROR: US29: INDIVIDUAL: Deceased individuals list is as follows : ', ['@I14@', '@I5@', '@I6@', '@I8@', '@I9@'])
+US29: Individual with ID @I14@ and name Rajendra Rao passed away on 2005-08-08
+US29: Individual with ID @I5@ and name Annarao Chatra passed away on 2001-10-10
+US29: Individual with ID @I6@ and name Jaljabai Bhat passed away on 2004-06-25
+US29: Individual with ID @I8@ and name Narayan Brahmeri passed away on 2007-06-20
+US29: Individual with ID @I9@ and name Sharada Bhat passed away on 2008-09-31
+('ERROR: US30: INDIVIDUAL: Individuals who are married and alive', [])
+('ERROR: US31: INDIVIDUAL: List of Individuals living single : ', ['@I12@', '@I13@', '@I17@', '@I18@', '@I1@', '@I23@', '@I25@', '@I30@', '@I31@', '@I32@', '@I35@', '@I36@', '@I38@', '@I41@', '@I42@', '@I4@'])
+@I12@: Priyanka Brahmeri
+@I13@: Pavan Brahmeri
+@I17@: Sparsh Rao
+@I18@: Siddhanth Rao
+@I1@: Akanksha Chatra
+@I23@: Darshan Prabhu
+@I25@: Achal Ugrani
+@I30@: Anvika Satheesh
+@I31@: Ashika Satheesh
+@I32@: Karthik Chatra
+@I35@: Aditi Kulkarni
+@I36@: Akul Kulkarni
+@I38@: Rakshita Rao
+@I41@: Adarsh Rao
+@I42@: Akarsh Rao
+@I4@: Akash Chatra
+('ERROR: US32: INDIVIDUAL: These individuals @F15@ were born at the same time: ', ['@I41@', '@I42@'])
+@I41@: Adarsh Rao
+@I42@: Akarsh Rao
+('ERROR: US32: INDIVIDUAL: These individuals @F7@ were born at the same time: ', ['@I17@', '@I18@'])
+@I17@: Sparsh Rao
+@I18@: Siddhanth Rao
+.......F.....
+======================================================================
+FAIL: test8 (__main__.TestStringMethods)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\SEM 3\Agile\9\Sprint3\finalTestCaseSprint3.py", line 21, in test8
+    self.assertIsNone(sprint3.getDeathDateByID, msg = None)
+AssertionError: <function getDeathDateByID at 0x0000000004029B38> is not None
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.052s
+
+FAILED (failures=1)
+>>> 
