@@ -2,72 +2,475 @@ Python 2.7.14rc1 (v2.7.14rc1:c707893, Aug 27 2017, 00:09:00) [MSC v.1500 64 bit 
 Type "copyright", "credits" or "license()" for more information.
 >>> 
 ========= RESTART: C:\SEM 3\Agile\9\Sprint3\finalTestCaseSprint3.py =========
-US01: There are no dates before the current date :)
-US02: There is no individual having birth dates after marriage dates :)
-US03: There is no one having birthdate after death date :)
-US04: There is no one having marriage dates after divorce date :)
-US05: There are no marriages after the death dates :)
-US06: There are no divorce after the death dates :)
-US07: All have ages less than 150 :)
-US08: All children have been born after the marriage of their parents :)
-US09: There is no one who was born after their parent's death
++-------+------------------+-----+------------+------------+----------+--------+
+|   ID  |       Name       | Sex | Birth Date | Death Date |  Child   | Spouse |
++-------+------------------+-----+------------+------------+----------+--------+
+| @I10@ | Praveen Brahmeri |  M  | 1958-04-13 |     0      | ['@F6@'] |  @F3@  |
++-------+------------------+-----+------------+------------+----------+--------+
++-------+----------------+-----+------------+------------+----------+--------+
+|   ID  |      Name      | Sex | Birth Date | Death Date |  Child   | Spouse |
++-------+----------------+-----+------------+------------+----------+--------+
+| @I11@ | Saraswati Bhat |  F  | 1965-07-14 |     0      | ['@F6@'] |   0    |
++-------+----------------+-----+------------+------------+----------+--------+
++-------+-------------------+-----+------------+------------+-------+--------+
+|   ID  |        Name       | Sex | Birth Date | Death Date | Child | Spouse |
++-------+-------------------+-----+------------+------------+-------+--------+
+| @I12@ | Priyanka Brahmeri |  F  | 1995-12-04 |     0      |   []  |  @F6@  |
++-------+-------------------+-----+------------+------------+-------+--------+
++-------+----------------+-----+------------+------------+-------+--------+
+|   ID  |      Name      | Sex | Birth Date | Death Date | Child | Spouse |
++-------+----------------+-----+------------+------------+-------+--------+
+| @I13@ | Pavan Brahmeri |  M  | 1997-05-17 |     0      |   []  |  @F6@  |
++-------+----------------+-----+------------+------------+-------+--------+
++-------+--------------+-----+------------+------------+----------+--------+
+|   ID  |     Name     | Sex | Birth Date | Death Date |  Child   | Spouse |
++-------+--------------+-----+------------+------------+----------+--------+
+| @I14@ | Rajendra Rao |  M  | 1945-06-10 | 2005-08-08 | ['@F5@'] |   0    |
++-------+--------------+-----+------------+------------+----------+--------+
++-------+------------+-----+------------+------------+----------+--------+
+|   ID  |    Name    | Sex | Birth Date | Death Date |  Child   | Spouse |
++-------+------------+-----+------------+------------+----------+--------+
+| @I15@ | Saahil Rao |  M  | 1982-06-18 |     0      | ['@F7@'] |  @F5@  |
++-------+------------+-----+------------+------------+----------+--------+
++-------+--------------+-----+------------+------------+----------+--------+
+|   ID  |     Name     | Sex | Birth Date | Death Date |  Child   | Spouse |
++-------+--------------+-----+------------+------------+----------+--------+
+| @I16@ | Samaira Raut |  F  | 1984-06-15 |     0      | ['@F7@'] |   0    |
++-------+--------------+-----+------------+------------+----------+--------+
++-------+------------+-----+------------+------------+-------+--------+
+|   ID  |    Name    | Sex | Birth Date | Death Date | Child | Spouse |
++-------+------------+-----+------------+------------+-------+--------+
+| @I17@ | Sparsh Rao |  M  | 2010-11-08 |     0      |   []  |  @F7@  |
++-------+------------+-----+------------+------------+-------+--------+
++-------+---------------+-----+------------+------------+-------+--------+
+|   ID  |      Name     | Sex | Birth Date | Death Date | Child | Spouse |
++-------+---------------+-----+------------+------------+-------+--------+
+| @I18@ | Siddhanth Rao |  M  | 2010-11-08 |     0      |   []  |  @F7@  |
++-------+---------------+-----+------------+------------+-------+--------+
++-------+---------------+-----+------------+------------+----------+--------+
+|   ID  |      Name     | Sex | Birth Date | Death Date |  Child   | Spouse |
++-------+---------------+-----+------------+------------+----------+--------+
+| @I19@ | Tina Brahmeri |  F  | 1949-08-08 |     0      | ['@F8@'] |  @F3@  |
++-------+---------------+-----+------------+------------+----------+--------+
++------+-----------------+-----+------------+------------+-------+--------+
+|  ID  |       Name      | Sex | Birth Date | Death Date | Child | Spouse |
++------+-----------------+-----+------------+------------+-------+--------+
+| @I1@ | Akanksha Chatra |  F  | 1993-02-06 |     0      |   []  |  @F1@  |
++------+-----------------+-----+------------+------------+-------+--------+
++-------+-----------------+-----+------------+------------+----------+--------+
+|   ID  |       Name      | Sex | Birth Date | Death Date |  Child   | Spouse |
++-------+-----------------+-----+------------+------------+----------+--------+
+| @I20@ | Rajendra Prabhu |  M  | 1941-05-02 |     0      | ['@F8@'] |   0    |
++-------+-----------------+-----+------------+------------+----------+--------+
++-------+--------------+-----+------------+------------+--------------------+--------+
+|   ID  |     Name     | Sex | Birth Date | Death Date |       Child        | Spouse |
++-------+--------------+-----+------------+------------+--------------------+--------+
+| @I21@ | Rahul Prabhu |  M  | 1976-07-29 |     0      | ['@F10@', '@F10@'] |  @F8@  |
++-------+--------------+-----+------------+------------+--------------------+--------+
++-------+---------------+-----+------------+------------+-----------+--------+
+|   ID  |      Name     | Sex | Birth Date | Death Date |   Child   | Spouse |
++-------+---------------+-----+------------+------------+-----------+--------+
+| @I22@ | Anjali Hebbar |  F  | 1979-07-30 |     0      | ['@F10@'] |   0    |
++-------+---------------+-----+------------+------------+-----------+--------+
++-------+----------------+-----+------------+------------+-------+--------+
+|   ID  |      Name      | Sex | Birth Date | Death Date | Child | Spouse |
++-------+----------------+-----+------------+------------+-------+--------+
+| @I23@ | Darshan Prabhu |  M  | 2004-12-30 |     0      |   []  | @F10@  |
++-------+----------------+-----+------------+------------+-------+--------+
++-------+------------+-----+------------+------------+--------------------+--------+
+|   ID  |    Name    | Sex | Birth Date | Death Date |       Child        | Spouse |
++-------+------------+-----+------------+------------+--------------------+--------+
+| @I24@ | Tina Singh |  F  | 1978-08-30 |     0      | ['@F10@', '@F11@'] |   0    |
++-------+------------+-----+------------+------------+--------------------+--------+
++-------+--------------+-----+------------+------------+-------+--------+
+|   ID  |     Name     | Sex | Birth Date | Death Date | Child | Spouse |
++-------+--------------+-----+------------+------------+-------+--------+
+| @I25@ | Achal Ugrani |  M  | 2000-08-11 |     0      |   []  | @F10@  |
++-------+--------------+-----+------------+------------+-------+--------+
++-------+---------------+-----+------------+------------+-----------+--------+
+|   ID  |      Name     | Sex | Birth Date | Death Date |   Child   | Spouse |
++-------+---------------+-----+------------+------------+-----------+--------+
+| @I26@ | Nagesh Chatra |  M  | 2018-12-25 |     0      | ['@F12@'] |  @F2@  |
++-------+---------------+-----+------------+------------+-----------+--------+
++-------+--------------------+-----+------------+------------+-----------+--------+
+|   ID  |        Name        | Sex | Birth Date | Death Date |   Child   | Spouse |
++-------+--------------------+-----+------------+------------+-----------+--------+
+| @I27@ | Shashikala Kalanji |  F  | 1952-08-26 |     0      | ['@F12@'] |   0    |
++-------+--------------------+-----+------------+------------+-----------+--------+
++-------+---------------+-----+------------+------------+-----------+--------+
+|   ID  |      Name     | Sex | Birth Date | Death Date |   Child   | Spouse |
++-------+---------------+-----+------------+------------+-----------+--------+
+| @I28@ | Shilpa Chatra |  F  | 1980-09-08 |     0      | ['@F13@'] | @F12@  |
++-------+---------------+-----+------------+------------+-----------+--------+
++-------+--------------+-----+------------+------------+-----------+--------+
+|   ID  |     Name     | Sex | Birth Date | Death Date |   Child   | Spouse |
++-------+--------------+-----+------------+------------+-----------+--------+
+| @I29@ | Satheesh Rao |  M  | 1979-10-17 |     0      | ['@F13@'] |   0    |
++-------+--------------+-----+------------+------------+-----------+--------+
++------+--------------------+-----+------------+------------+----------+--------+
+|  ID  |        Name        | Sex | Birth Date | Death Date |  Child   | Spouse |
++------+--------------------+-----+------------+------------+----------+--------+
+| @I2@ | Ramakrishna Chatra |  M  | 1961-02-15 |     0      | ['@F1@'] |  @F2@  |
++------+--------------------+-----+------------+------------+----------+--------+
++-------+------------+-----+------------+------------+-------+--------+
+|   ID  |    Name    | Sex | Birth Date | Death Date | Child | Spouse |
++-------+------------+-----+------------+------------+-------+--------+
+| @I30@ | Anvika Rao |  F  | 2001-05-06 |     0      |   []  | @F13@  |
++-------+------------+-----+------------+------------+-------+--------+
++-------+------------+-----+------------+------------+-------+--------+
+|   ID  |    Name    | Sex | Birth Date | Death Date | Child | Spouse |
++-------+------------+-----+------------+------------+-------+--------+
+| @I31@ | Ashika Rao |  F  | 2001-05-06 |     0      |   []  | @F13@  |
++-------+------------+-----+------------+------------+-------+--------+
++-------+----------------+-----+------------+------------+-------+--------+
+|   ID  |      Name      | Sex | Birth Date | Death Date | Child | Spouse |
++-------+----------------+-----+------------+------------+-------+--------+
+| @I32@ | Karthik Chatra |  M  | 1985-09-30 |     0      |   []  | @F12@  |
++-------+----------------+-----+------------+------------+-------+--------+
++-------+--------------+-----+------------+------------+-----------+--------+
+|   ID  |     Name     | Sex | Birth Date | Death Date |   Child   | Spouse |
++-------+--------------+-----+------------+------------+-----------+--------+
+| @I33@ | Swati Chatra |  F  | 1982-08-31 |     0      | ['@F14@'] | @F12@  |
++-------+--------------+-----+------------+------------+-----------+--------+
++-------+---------------------+-----+------------+------------+-----------+--------+
+|   ID  |         Name        | Sex | Birth Date | Death Date |   Child   | Spouse |
++-------+---------------------+-----+------------+------------+-----------+--------+
+| @I34@ | Vijaymohan Kulkarni |  F  | 1980-10-31 |     0      | ['@F14@'] |   0    |
++-------+---------------------+-----+------------+------------+-----------+--------+
++-------+---------------+-----+------------+------------+-------+--------+
+|   ID  |      Name     | Sex | Birth Date | Death Date | Child | Spouse |
++-------+---------------+-----+------------+------------+-------+--------+
+| @I35@ | Akul Kulkarni |  F  | 2011-02-22 |     0      |   []  | @F14@  |
++-------+---------------+-----+------------+------------+-------+--------+
++-------+---------------+-----+------------+------------+-------+--------+
+|   ID  |      Name     | Sex | Birth Date | Death Date | Child | Spouse |
++-------+---------------+-----+------------+------------+-------+--------+
+| @I36@ | Akul Kulkarni |  M  | 2011-02-22 |     0      |   []  | @F14@  |
++-------+---------------+-----+------------+------------+-------+--------+
++-------+------------+-----+------------+------------+-----------+--------+
+|   ID  |    Name    | Sex | Birth Date | Death Date |   Child   | Spouse |
++-------+------------+-----+------------+------------+-----------+--------+
+| @I37@ | Yuvraj Rao |  M  | 1977-11-31 |     0      | ['@F11@'] |   0    |
++-------+------------+-----+------------+------------+-----------+--------+
++-------+--------------+-----+------------+------------+-------+--------+
+|   ID  |     Name     | Sex | Birth Date | Death Date | Child | Spouse |
++-------+--------------+-----+------------+------------+-------+--------+
+| @I38@ | Rakshita Rao |  F  | 2006-04-04 |     0      |   []  | @F11@  |
++-------+--------------+-----+------------+------------+-------+--------+
++-------+------------+-----+------------+------------+-----------+--------+
+|   ID  |    Name    | Sex | Birth Date | Death Date |   Child   | Spouse |
++-------+------------+-----+------------+------------+-----------+--------+
+| @I39@ | Saloni Rao |  F  | 1979-06-28 |     0      | ['@F15@'] |  @F5@  |
++-------+------------+-----+------------+------------+-----------+--------+
++------+-----------------+-----+------------+------------+----------+--------+
+|  ID  |       Name      | Sex | Birth Date | Death Date |  Child   | Spouse |
++------+-----------------+-----+------------+------------+----------+--------+
+| @I3@ | Sunita Brahmeri |  F  | 1969-10-21 |     0      | ['@F1@'] |  @F3@  |
++------+-----------------+-----+------------+------------+----------+--------+
++-------+-----------+-----+------------+------------+-----------+--------+
+|   ID  |    Name   | Sex | Birth Date | Death Date |   Child   | Spouse |
++-------+-----------+-----+------------+------------+-----------+--------+
+| @I40@ | Amogh Rao |  M  | 1978-10-13 |     0      | ['@F15@'] |   0    |
++-------+-----------+-----+------------+------------+-----------+--------+
++-------+------------+-----+------------+------------+-------+--------+
+|   ID  |    Name    | Sex | Birth Date | Death Date | Child | Spouse |
++-------+------------+-----+------------+------------+-------+--------+
+| @I41@ | Adarsh Rao |  M  | 2003-09-05 |     0      |   []  | @F15@  |
++-------+------------+-----+------------+------------+-------+--------+
++-------+------------+-----+------------+------------+-------+--------+
+|   ID  |    Name    | Sex | Birth Date | Death Date | Child | Spouse |
++-------+------------+-----+------------+------------+-------+--------+
+| @I42@ | Akarsh Rao |  M  | 2003-09-05 |     0      |   []  | @F15@  |
++-------+------------+-----+------------+------------+-------+--------+
++-------+-----------------+-----+------------+------------+----------+--------+
+|   ID  |       Name      | Sex | Birth Date | Death Date |  Child   | Spouse |
++-------+-----------------+-----+------------+------------+----------+--------+
+| @I43@ | Rajesh Chinappa |  M  | 1948-06-05 |     0      | ['@F4@'] |   0    |
++-------+-----------------+-----+------------+------------+----------+--------+
++-------+-----------+-----+------------+------------+-------+--------+
+|   ID  |    Name   | Sex | Birth Date | Death Date | Child | Spouse |
++-------+-----------+-----+------------+------------+-------+--------+
+| @I44@ | Avyan Rao |  M  | 2001-05-06 |     0      |   []  | @F13@  |
++-------+-----------+-----+------------+------------+-------+--------+
++-------+-----------+-----+------------+------------+-------+--------+
+|   ID  |    Name   | Sex | Birth Date | Death Date | Child | Spouse |
++-------+-----------+-----+------------+------------+-------+--------+
+| @I45@ | Aryan Rao |  M  | 2001-05-06 |     0      |   []  | @F13@  |
++-------+-----------+-----+------------+------------+-------+--------+
++-------+-----------+-----+------------+------------+-------+--------+
+|   ID  |    Name   | Sex | Birth Date | Death Date | Child | Spouse |
++-------+-----------+-----+------------+------------+-------+--------+
+| @I46@ | Akhil Rao |  M  | 2001-05-06 |     0      |   []  | @F13@  |
++-------+-----------+-----+------------+------------+-------+--------+
++-------+------------+-----+------------+------------+-------+--------+
+|   ID  |    Name    | Sex | Birth Date | Death Date | Child | Spouse |
++-------+------------+-----+------------+------------+-------+--------+
+| @I47@ | Anjana Rao |  F  | 2006-07-13 |     0      |   []  | @F13@  |
++-------+------------+-----+------------+------------+-------+--------+
++-------+------------+-----+------------+------------+-------+--------+
+|   ID  |    Name    | Sex | Birth Date | Death Date | Child | Spouse |
++-------+------------+-----+------------+------------+-------+--------+
+| @I48@ | Saloni Rao |  F  | 2007-09-19 |     0      |   []  | @F13@  |
++-------+------------+-----+------------+------------+-------+--------+
++-------+-------------+-----+------------+------------+-------+--------+
+|   ID  |     Name    | Sex | Birth Date | Death Date | Child | Spouse |
++-------+-------------+-----+------------+------------+-------+--------+
+| @I49@ | Prajwal Rao |  M  | 2008-10-16 |     0      |   []  | @F13@  |
++-------+-------------+-----+------------+------------+-------+--------+
++------+--------------+-----+------------+------------+-------+--------+
+|  ID  |     Name     | Sex | Birth Date | Death Date | Child | Spouse |
++------+--------------+-----+------------+------------+-------+--------+
+| @I4@ | Akash Chatra |  M  | 2001-04-28 |     0      |   []  |  @F1@  |
++------+--------------+-----+------------+------------+-------+--------+
++-------+----------+-----+------------+------------+-------+--------+
+|   ID  |   Name   | Sex | Birth Date | Death Date | Child | Spouse |
++-------+----------+-----+------------+------------+-------+--------+
+| @I50@ | Udit Rao |  M  | 2009-11-19 |     0      |   []  | @F13@  |
++-------+----------+-----+------------+------------+-------+--------+
++-------+-----------+-----+------------+------------+-------+--------+
+|   ID  |    Name   | Sex | Birth Date | Death Date | Child | Spouse |
++-------+-----------+-----+------------+------------+-------+--------+
+| @I51@ | Kevin Rao |  0  | 2011-08-07 |     0      |   []  | @F13@  |
++-------+-----------+-----+------------+------------+-------+--------+
++-------+-------------+-----+------------+------------+-------+--------+
+|   ID  |     Name    | Sex | Birth Date | Death Date | Child | Spouse |
++-------+-------------+-----+------------+------------+-------+--------+
+| @I52@ | Shivani Rao |  F  | 2013-06-15 |     0      |   []  | @F13@  |
++-------+-------------+-----+------------+------------+-------+--------+
++-------+-------------+-----+------------+------------+-------+--------+
+|   ID  |     Name    | Sex | Birth Date | Death Date | Child | Spouse |
++-------+-------------+-----+------------+------------+-------+--------+
+| @I53@ | Sayalee Rao |  F  | 2015-08-10 |     0      |   []  | @F13@  |
++-------+-------------+-----+------------+------------+-------+--------+
++-------+----------+-----+------------+------------+-------+--------+
+|   ID  |   Name   | Sex | Birth Date | Death Date | Child | Spouse |
++-------+----------+-----+------------+------------+-------+--------+
+| @I54@ | Monu Rao |  M  | 2016-10-14 |     0      |   []  | @F13@  |
++-------+----------+-----+------------+------------+-------+--------+
++-------+-----------+-----+------------+------------+-------+--------+
+|   ID  |    Name   | Sex | Birth Date | Death Date | Child | Spouse |
++-------+-----------+-----+------------+------------+-------+--------+
+| @I55@ | Krish Rao |  M  | 2001-05-06 |     0      |   []  | @F13@  |
++-------+-----------+-----+------------+------------+-------+--------+
++-------+-------------+-----+------------+------------+-------+--------+
+|   ID  |     Name    | Sex | Birth Date | Death Date | Child | Spouse |
++-------+-------------+-----+------------+------------+-------+--------+
+| @I56@ | Pragati Rao |  F  | 2007-09-19 |     0      |   []  | @F13@  |
++-------+-------------+-----+------------+------------+-------+--------+
++------+----------------+-----+------------+------------+----------+--------+
+|  ID  |      Name      | Sex | Birth Date | Death Date |  Child   | Spouse |
++------+----------------+-----+------------+------------+----------+--------+
+| @I5@ | Annarao Chatra |  M  | 1920-03-13 | 2001-10-10 | ['@F2@'] |   0    |
++------+----------------+-----+------------+------------+----------+--------+
++------+---------------+-----+------------+------------+----------+--------+
+|  ID  |      Name     | Sex | Birth Date | Death Date |  Child   | Spouse |
++------+---------------+-----+------------+------------+----------+--------+
+| @I6@ | Jaljabai Bhat |  F  | 1930-05-16 | 2004-06-25 | ['@F2@'] |   0    |
++------+---------------+-----+------------+------------+----------+--------+
++------+---------------+-----+------------+------------+------------------+--------+
+|  ID  |      Name     | Sex | Birth Date | Death Date |      Child       | Spouse |
++------+---------------+-----+------------+------------+------------------+--------+
+| @I7@ | Sulochana Rao |  F  | 1950-04-10 |     0      | ['@F4@', '@F5@'] |  @F2@  |
++------+---------------+-----+------------+------------+------------------+--------+
++------+------------------+-----+------------+------------+----------+--------+
+|  ID  |       Name       | Sex | Birth Date | Death Date |  Child   | Spouse |
++------+------------------+-----+------------+------------+----------+--------+
+| @I8@ | Narayan Brahmeri |  M  | 1925-01-31 | 2007-06-20 | ['@F3@'] |   0    |
++------+------------------+-----+------------+------------+----------+--------+
++------+--------------+-----+------------+------------+----------+--------+
+|  ID  |     Name     | Sex | Birth Date | Death Date |  Child   | Spouse |
++------+--------------+-----+------------+------------+----------+--------+
+| @I9@ | Sharada Bhat |  F  | 1930-09-19 | 2008-09-31 | ['@F3@'] |   0    |
++------+--------------+-----+------------+------------+----------+--------+
++-------+----------------+---------------+
+|   ID  | Husband's Name |  Wife's Name  |
++-------+----------------+---------------+
+| @F10@ |  Rahul Prabhu  | Anjali Hebbar |
++-------+----------------+---------------+
++-------+----------------+-------------+
+|   ID  | Husband's Name | Wife's Name |
++-------+----------------+-------------+
+| @F10@ |  Rahul Prabhu  |  Tina Singh |
++-------+----------------+-------------+
++-------+----------------+-------------+
+|   ID  | Husband's Name | Wife's Name |
++-------+----------------+-------------+
+| @F11@ |   Yuvraj Rao   |  Tina Singh |
++-------+----------------+-------------+
++-------+----------------+--------------------+
+|   ID  | Husband's Name |    Wife's Name     |
++-------+----------------+--------------------+
+| @F12@ | Nagesh Chatra  | Shashikala Kalanji |
++-------+----------------+--------------------+
++-------+----------------+---------------+
+|   ID  | Husband's Name |  Wife's Name  |
++-------+----------------+---------------+
+| @F13@ |  Satheesh Rao  | Shilpa Chatra |
++-------+----------------+---------------+
++-------+----------------+---------------------+
+|   ID  | Husband's Name |     Wife's Name     |
++-------+----------------+---------------------+
+| @F14@ |  Swati Chatra  | Vijaymohan Kulkarni |
++-------+----------------+---------------------+
++-------+----------------+-------------+
+|   ID  | Husband's Name | Wife's Name |
++-------+----------------+-------------+
+| @F15@ |   Amogh Rao    |  Saloni Rao |
++-------+----------------+-------------+
++------+--------------------+-----------------+
+|  ID  |   Husband's Name   |   Wife's Name   |
++------+--------------------+-----------------+
+| @F1@ | Ramakrishna Chatra | Sunita Brahmeri |
++------+--------------------+-----------------+
++------+----------------+---------------+
+|  ID  | Husband's Name |  Wife's Name  |
++------+----------------+---------------+
+| @F2@ | Annarao Chatra | Jaljabai Bhat |
++------+----------------+---------------+
++------+------------------+--------------+
+|  ID  |  Husband's Name  | Wife's Name  |
++------+------------------+--------------+
+| @F3@ | Narayan Brahmeri | Sharada Bhat |
++------+------------------+--------------+
++------+-----------------+---------------+
+|  ID  |  Husband's Name |  Wife's Name  |
++------+-----------------+---------------+
+| @F4@ | Rajesh Chinappa | Sulochana Rao |
++------+-----------------+---------------+
++------+----------------+---------------+
+|  ID  | Husband's Name |  Wife's Name  |
++------+----------------+---------------+
+| @F5@ |  Rajendra Rao  | Sulochana Rao |
++------+----------------+---------------+
++------+------------------+----------------+
+|  ID  |  Husband's Name  |  Wife's Name   |
++------+------------------+----------------+
+| @F6@ | Praveen Brahmeri | Saraswati Bhat |
++------+------------------+----------------+
++------+----------------+--------------+
+|  ID  | Husband's Name | Wife's Name  |
++------+----------------+--------------+
+| @F7@ |   Saahil Rao   | Samaira Raut |
++------+----------------+--------------+
++------+-----------------+---------------+
+|  ID  |  Husband's Name |  Wife's Name  |
++------+-----------------+---------------+
+| @F8@ | Rajendra Prabhu | Tina Brahmeri |
++------+-----------------+---------------+
+ERROR: INDIVIDUAL: US01: 2018-12-25 : @I26@ is before the current date
+ERROR: INDIVIDUAL: US01: There dates after the current date :(
+['2018-12-25']
+ERROR: INDIVIDUAL: US02: Nagesh Chatra have their marriage dates before birth date
+ERROR: INDIVIDUAL: US02: These people have birth dates after their marriage dates :( 
+['2018-12-25', 'Nagesh Chatra']
+ERROR: INDIVIDUAL: US03: These people have birth dates after their marriage dates :( 
+['2018-12-25', 'Nagesh Chatra']
+ERROR: INDIVIDUAL: US04: These people have marriage dates after their divorce dates :( 
+['2018-12-25', 'Nagesh Chatra']
+ERROR: INDIVIDUAL: US05: These people have marriage dates after their death dates :( 
+['2018-12-25', 'Nagesh Chatra']
+ERROR: INDIVIDUAL: US06: These people have divorce dates after their death dates :( 
+['2018-12-25', 'Nagesh Chatra']
+ERROR: INDIVIDUAL: US07: These are people having more than 150 age
+['2018-12-25', 'Nagesh Chatra']
+ERROR: INDIVIDUAL: US08: These children were born before marriage of their parents :(
+['2018-12-25', 'Nagesh Chatra']
+ERROR: INDIVIDUAL: US09: @I26@was born after death of mother@I6@
+ERROR: INDIVIDUAL: US09: @I26@was born after death of father@I5@
+ERROR: INDIVIDUAL: US09: These were born after their parent's death
+['2018-12-25', 'Nagesh Chatra', '@I26@', '@I26@']
+ERROR: INDIVIDUAL: US10: User Story 10: This individual with ID @I26@ married before he/she turned 14 in family with ID@F12@
 ERROR: INDIVIDUAL: US10: This individual with ID @I6@ married before he/she turned 14 in family with ID @F2@
 ERROR: INDIVIDUAL: US10: This individual with ID @I9@ married before he/she turned 14 in family with ID @F3@
-US10: The individuals mentioned below married before they turned 14: 
-['@I6@', '@I9@']
-US11: The individual in the given gedcom file is not involved in Bigamy.
-US12: Both mother and father are not too old
-US13: All the Siblings have correct spacing
-Us14: There are no families with more than 5 kids.
-US15: There are no families with 15 or more siblings.
+ERROR: INDIVIDUAL: US10:  The individuals mentioned below married before they turned 14: 
+['@I26@', '@I6@', '@I9@']
+ERROR: INDIVIDUAL: US11: The person with id @I21@ is married to the person @I22@ with family id @F10@ while the person is still married to person with id @I22@ in family @F10@
+ERROR: INDIVIDUAL: US11: The person with id @I24@ is married to the person @I37@ with family id @F11@ while the person is still married to person with id @I21@ in family @F10@
+ERROR: INDIVIDUAL: US11: The individuals who are involved in Bigamy are as follows: 
+['@I21@', '@I24@']
+ERROR: INDIVIDUAL: US12: @I6@ Mother is 60 years or more older than her child @I26@
+ERROR: INDIVIDUAL: US12:@I5@ Father is 80 years or more older than his child @I26@
+ERROR: INDIVIDUAL: US12: Parents who are too old compared to their children: 
+['@I6@', '@I5@']
+ERROR: INDIVIDUAL: US13: The following Sibling pairs have bad birth date spacings
+['2018-12-25', 'Nagesh Chatra', '@I26@', '@I26@']
+ERROR: FAMILY: US14: The Family with ID @F13@ had more than 5 Births and hence is not valid.
+ERROR: FAMILY: US14: The families mentioned below had more than 5 kids during the time of birth:
+['@F13@']
+ERROR: FAMILY: US15: The family with id @F13@ has 15 or more siblings.
+ERROR: FAMILY: US15: The families with 15 or more siblings are as follows: 
+['@F13@']
 "ERROR: FAMILY: US16: Family @F10@ has one or more male members with different last name(s).
+"ERROR: FAMILY: US16: Family @F14@ has one or more male members with different last name(s).
 ERROR: FAMILY: US16: Families which have one or more male members with different last name(s): 
-['@F10@']
-US21: There are no individuals with incorrect gender roles.
+['@F10@', '@F14@']
+ERROR: US21: INDIVIDUAL: This Individual with ID @I33@ in the family with ID@F14@ has incorrect Gender role.
+ERROR: INDIVIDUAL: US21: The individuals mentioned below have incorrect gender role: 
+['@I33@']
 US22: The IDs in the list are unique.
-US23: all Individuals have unique name and birth date accordingly .
-US24: All Families are unique.
-('ERROR: US29: INDIVIDUAL: Deceased individuals list is as follows : ', ['@I14@', '@I5@', '@I6@', '@I8@', '@I9@'])
-US29: Individual with ID @I14@ and name Rajendra Rao passed away on 2005-08-08
-US29: Individual with ID @I5@ and name Annarao Chatra passed away on 2001-10-10
-US29: Individual with ID @I6@ and name Jaljabai Bhat passed away on 2004-06-25
-US29: Individual with ID @I8@ and name Narayan Brahmeri passed away on 2007-06-20
-US29: Individual with ID @I9@ and name Sharada Bhat passed away on 2008-09-31
+ERROR: US23: INDIVIDUAL: According to unique name and birth date, following Individual(s) dont have unique name and birth date : 
+set([('Akul Kulkarni', '2011-02-22')])
+ERROR: FAMILY: US24:  These families are not unique considering the spouse details: 
+set([('@F10@'])
+('ERROR: INDIVIDUAL: US29: Deceased individuals list is as follows : ', ['@I14@', '@I5@', '@I6@', '@I8@', '@I9@'])
+ERROR: INDIVIDUAL: US29: Individual with ID @I14@ and name Rajendra Rao passed away on 2005-08-08
+ERROR: INDIVIDUAL: US29: Individual with ID @I5@ and name Annarao Chatra passed away on 2001-10-10
+ERROR: INDIVIDUAL: US29: Individual with ID @I6@ and name Jaljabai Bhat passed away on 2004-06-25
+ERROR: INDIVIDUAL: US29: Individual with ID @I8@ and name Narayan Brahmeri passed away on 2007-06-20
+ERROR: INDIVIDUAL: US29: Individual with ID @I9@ and name Sharada Bhat passed away on 2008-09-31
 ('ERROR: US30: INDIVIDUAL: Individuals who are married and alive', [])
-('ERROR: US31: INDIVIDUAL: List of Individuals living single : ', ['@I12@', '@I13@', '@I17@', '@I18@', '@I1@', '@I23@', '@I25@', '@I30@', '@I31@', '@I32@', '@I35@', '@I36@', '@I38@', '@I41@', '@I42@', '@I4@'])
-@I12@: Priyanka Brahmeri
-@I13@: Pavan Brahmeri
-@I17@: Sparsh Rao
-@I18@: Siddhanth Rao
-@I1@: Akanksha Chatra
-@I23@: Darshan Prabhu
-@I25@: Achal Ugrani
-@I30@: Anvika Satheesh
-@I31@: Ashika Satheesh
-@I32@: Karthik Chatra
-@I35@: Aditi Kulkarni
-@I36@: Akul Kulkarni
-@I38@: Rakshita Rao
-@I41@: Adarsh Rao
-@I42@: Akarsh Rao
-@I4@: Akash Chatra
+('ERROR: US31: INDIVIDUAL: List of Individuals living single : ', ['@I12@', '@I13@', '@I17@', '@I18@', '@I1@', '@I23@', '@I25@', '@I30@', '@I31@', '@I32@', '@I35@', '@I36@', '@I38@', '@I41@', '@I42@', '@I44@', '@I45@', '@I46@', '@I47@', '@I48@', '@I49@', '@I4@', '@I50@', '@I51@', '@I52@', '@I53@', '@I54@', '@I55@', '@I56@'])
+ERROR: INDIVIDUAL: US31: @I12@: Priyanka Brahmeri
+ERROR: INDIVIDUAL: US31: @I13@: Pavan Brahmeri
+ERROR: INDIVIDUAL: US31: @I17@: Sparsh Rao
+ERROR: INDIVIDUAL: US31: @I18@: Siddhanth Rao
+ERROR: INDIVIDUAL: US31: @I1@: Akanksha Chatra
+ERROR: INDIVIDUAL: US31: @I23@: Darshan Prabhu
+ERROR: INDIVIDUAL: US31: @I25@: Achal Ugrani
+ERROR: INDIVIDUAL: US31: @I30@: Anvika Rao
+ERROR: INDIVIDUAL: US31: @I31@: Ashika Rao
+ERROR: INDIVIDUAL: US31: @I32@: Karthik Chatra
+ERROR: INDIVIDUAL: US31: @I35@: Akul Kulkarni
+ERROR: INDIVIDUAL: US31: @I36@: Akul Kulkarni
+ERROR: INDIVIDUAL: US31: @I38@: Rakshita Rao
+ERROR: INDIVIDUAL: US31: @I41@: Adarsh Rao
+ERROR: INDIVIDUAL: US31: @I42@: Akarsh Rao
+ERROR: INDIVIDUAL: US31: @I44@: Avyan Rao
+ERROR: INDIVIDUAL: US31: @I45@: Aryan Rao
+ERROR: INDIVIDUAL: US31: @I46@: Akhil Rao
+ERROR: INDIVIDUAL: US31: @I47@: Anjana Rao
+ERROR: INDIVIDUAL: US31: @I48@: Saloni Rao
+ERROR: INDIVIDUAL: US31: @I49@: Prajwal Rao
+ERROR: INDIVIDUAL: US31: @I4@: Akash Chatra
+ERROR: INDIVIDUAL: US31: @I50@: Udit Rao
+ERROR: INDIVIDUAL: US31: @I51@: Kevin Rao
+ERROR: INDIVIDUAL: US31: @I52@: Shivani Rao
+ERROR: INDIVIDUAL: US31: @I53@: Sayalee Rao
+ERROR: INDIVIDUAL: US31: @I54@: Monu Rao
+ERROR: INDIVIDUAL: US31: @I55@: Krish Rao
+ERROR: INDIVIDUAL: US31: @I56@: Pragati Rao
+('ERROR: US32: INDIVIDUAL: These individuals @F13@ were born at the same time: ', ['@I30@', '@I31@', '@I44@', '@I45@', '@I46@', '@I55@'])
+ERROR: US32: INDIVIDUAL: @I30@: Anvika Rao
+ERROR: US32: INDIVIDUAL: @I31@: Ashika Rao
+ERROR: US32: INDIVIDUAL: @I44@: Avyan Rao
+ERROR: US32: INDIVIDUAL: @I45@: Aryan Rao
+ERROR: US32: INDIVIDUAL: @I46@: Akhil Rao
+ERROR: US32: INDIVIDUAL: @I55@: Krish Rao
+('ERROR: US32: INDIVIDUAL: These individuals @F13@ were born at the same time: ', ['@I48@', '@I56@'])
+ERROR: US32: INDIVIDUAL: @I48@: Saloni Rao
+ERROR: US32: INDIVIDUAL: @I56@: Pragati Rao
+('ERROR: US32: INDIVIDUAL: These individuals @F14@ were born at the same time: ', ['@I35@', '@I36@'])
+ERROR: US32: INDIVIDUAL: @I35@: Akul Kulkarni
+ERROR: US32: INDIVIDUAL: @I36@: Akul Kulkarni
 ('ERROR: US32: INDIVIDUAL: These individuals @F15@ were born at the same time: ', ['@I41@', '@I42@'])
-@I41@: Adarsh Rao
-@I42@: Akarsh Rao
+ERROR: US32: INDIVIDUAL: @I41@: Adarsh Rao
+ERROR: US32: INDIVIDUAL: @I42@: Akarsh Rao
 ('ERROR: US32: INDIVIDUAL: These individuals @F7@ were born at the same time: ', ['@I17@', '@I18@'])
-@I17@: Sparsh Rao
-@I18@: Siddhanth Rao
-.......F.....
-======================================================================
-FAIL: test8 (__main__.TestStringMethods)
+ERROR: US32: INDIVIDUAL: @I17@: Sparsh Rao
+ERROR: US32: INDIVIDUAL: @I18@: Siddhanth Rao
+.................
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "C:\SEM 3\Agile\9\Sprint3\finalTestCaseSprint3.py", line 21, in test8
-    self.assertIsNone(sprint3.getDeathDateByID, msg = None)
-AssertionError: <function getDeathDateByID at 0x0000000004029B38> is not None
+Ran 17 tests in 0.000s
 
-----------------------------------------------------------------------
-Ran 13 tests in 0.052s
-
-FAILED (failures=1)
+OK
 >>> 

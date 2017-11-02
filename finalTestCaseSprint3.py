@@ -1,5 +1,6 @@
 import unittest
 import sprint3
+check=(sprint3.fileInput is " ")
 
 class TestStringMethods(unittest.TestCase):
     def test1(self):
@@ -18,7 +19,7 @@ class TestStringMethods(unittest.TestCase):
     def test7(self):
         self.assertNotEqual(sprint3.MarriageBeforeDeath, 0)       
     def test8(self):
-        self.assertIsNone(sprint3.getDeathDateByID, msg = None)
+        self.assertIsNotNone(sprint3.getDeathDateByID, msg = None)
     def test_age(self):
        age = (0 is 1)
        if(self.assertFalse(age)):
@@ -31,6 +32,16 @@ class TestStringMethods(unittest.TestCase):
     def test_upper(self):
         self.assertNotEqual(sprint3.dateList, " ")
     def test_lower(self):
+        self.assertFalse(len(sprint3.familyList()) is 0)  
+    def test_upper1(self):
+        self.assertNotEqual(sprint3.dateList, " ")   	
+    def testFile1(self):
+        self.assertFalse(check)
+    def test41(self):
+        self.assertTrue(len(sprint3.individualList()) is not 0)
+    def test51(self):
         self.assertFalse(len(sprint3.familyList()) is 0)
+		
+	
         	   		
 unittest.main()

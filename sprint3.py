@@ -171,11 +171,11 @@ def DatesBeforeCurrentDate(indiListData, famListData):
     for i in indiListData:
         if(i[3] > todayDate):
             dateList.append(i[3])
-            print(i[3] + " : " + i[0] + " is before the current date")
+            print("ERROR: INDIVIDUAL: US01: " + i[3] + " : " + i[0] + " is before the current date")
         if(i[4] != 0):
             if(i[4] > todayDate):
                 dateList.append(i[4])
-                print("ERROR: INDIVIDUAL: US08: "+i[4] + " : " + i[0] + " is before the current date")
+                print("ERROR: INDIVIDUAL: US01: "+i[4] + " : " + i[0] + " is before the current date")
 	#for family
     for i in famListData:
         if(i[3] > todayDate):
@@ -188,7 +188,7 @@ def DatesBeforeCurrentDate(indiListData, famListData):
     if(len(dateList) == 0):
         print("US01: There are no dates before the current date :)")
     else:
-        print("ERROR: FAMILY: US01: There dates after the current date :(")
+        print("ERROR: INDIVIDUAL: US01: There dates after the current date :(")
         print(dateList)
 
 #User Story 2
@@ -225,7 +225,7 @@ def BirthBeforeDeath(indiListData):
     if(len(dateList) == 0):
         print("US03: There is no one having birthdate after death date :)")
     else:
-        print("US03: These people have birth dates after their marriage dates :( ")
+        print("ERROR: INDIVIDUAL: US03: These people have birth dates after their marriage dates :( ")
         print(dateList)
 #User Story 4
 
@@ -413,10 +413,10 @@ def marriageAfter14(indiListData, famListData):
             print("ERROR: INDIVIDUAL: US10: This individual with ID " + i[2] + " married before he/she turned 14 in family with ID " + i[0])
 
     if(len(marriagelist) != 0):
-        print("US10: The individuals mentioned below married before they turned 14: ")
+        print("ERROR: INDIVIDUAL: US10:  The individuals mentioned below married before they turned 14: ")
         print(marriagelist)       
     else:
-        print("ERROR: INDIVIDUAL: US10: There are no individuals who married before they turned 14 years.")
+        print("US10: There are no individuals who married before they turned 14 years.")
 		
 		
 #User Story 11
@@ -590,7 +590,7 @@ def correctGenderForRoles(indiListData, famListData):
             genderRoleList.append(i[1])
             print("ERROR: US21: INDIVIDUAL: This Individual with ID " + i[1] + " in the family with ID" + i[0] + " has incorrect Gender role.")      
     if(len(genderRoleList) != 0):
-        print("US21: The individuals mentioned below have incorrect gender role: ")
+        print("ERROR: INDIVIDUAL: US21: The individuals mentioned below have incorrect gender role: ")
         print(genderRoleList)
     else:
         print("US21: There are no individuals with incorrect gender roles.")
@@ -673,9 +673,9 @@ def deceasedList(indiListData):
     for individual in indiListData:
         if individual[4] is not 0:
             deceasedList.append(individual[0])
-    print("ERROR: US29: INDIVIDUAL: Deceased individuals list is as follows : ", deceasedList)
+    print("ERROR: INDIVIDUAL: US29: Deceased individuals list is as follows : ", deceasedList)
     for i in deceasedList:
-        print("US29: Individual with ID " + i + " and name " + getNameByID(indiListData, i) + " passed away on " + getDeathDateByID(indiListData, i))
+        print("ERROR: INDIVIDUAL: US29: Individual with ID " + i + " and name " + getNameByID(indiListData, i) + " passed away on " + getDeathDateByID(indiListData, i))
     return deceasedList
 
 #User Story 30
@@ -690,7 +690,7 @@ def livingPeopleMarried(indiListData, famListData):
                 marriedPeopleList.append(i[2])
     print ("ERROR: US30: INDIVIDUAL: Individuals who are married and alive", marriedPeopleList)
     for i in marriedPeopleList:
-        print("US30: ID:" + i + " with name " + getIndiName(indiListData, i) + " is married with family " + str(getSpouseFamily(indiListData, i)))
+        print("ERROR: INDIVIDUAL: US30: ID:" + i + " with name " + getIndiName(indiListData, i) + " is married with family " + str(getSpouseFamily(indiListData, i)))
    
 #User Story 31
 
@@ -701,7 +701,7 @@ def listLivingSingle(indiListData):
             single.append(i[0])
     print("ERROR: US31: INDIVIDUAL: List of Individuals living single : ", single)
     for k in single:
-        print(k + ": " + getNameByID(indiListData, k))
+        print("ERROR: INDIVIDUAL: US31: " + k + ": " + getNameByID(indiListData, k))
    
 #User Story 32
 def listOfMultipleBirths(indiListData, famListData):
@@ -722,7 +722,7 @@ def listOfMultipleBirths(indiListData, famListData):
                 if(len(j) > 1):
                     print('ERROR: US32: INDIVIDUAL: These individuals ' + i[0] + ' were born at the same time: ', j)
                     for k in j:
-                        print(k + ': ' + getNameByID(indiListData, k))
+                        print("ERROR: US32: INDIVIDUAL: "+ k + ': ' + getNameByID(indiListData, k))
 
 
 #parsing the gedcom file 
@@ -790,6 +790,15 @@ def main(file_name):
     indiListData, famListData = getcomParse(file_name)
     indiListData.sort()
     famListData.sort()
+    for i in indiListData:
+        table = PrettyTable(["ID", "Name" , "Sex", "Birth Date", "Death Date" , "Child" , "Spouse"])
+        table.add_row([i[0] , i[1], i[2],i[3], i[4] , i[5] , i[6]])
+        print (table)
+    for i in famListData:
+        table1 = PrettyTable(["ID", "Husband's Name" , "Wife's Name"])
+        table1.add_row([i[0] , getNameByID(indiListData,i[1]) , getNameByID(indiListData,i[2]) ])
+        print (table1)
+
 	#Sprint 1
     DatesBeforeCurrentDate(indiListData, famListData)
     birthBeforeMarriage(indiListData, famListData)
@@ -819,6 +828,8 @@ def main(file_name):
     livingPeopleMarried(indiListData, famListData)
     listLivingSingle(indiListData)
     listOfMultipleBirths(indiListData, famListData)
+
+    
 	
-fileInput= 'C:\Users\salon\Desktop\sprint\CS555-SSW555_agileMethodologies\Updated2GedcomFile.ged'
+fileInput= 'C:\SEM 3\Agile\9\Sprint3\errorGedcom.ged'
 main(fileInput)
