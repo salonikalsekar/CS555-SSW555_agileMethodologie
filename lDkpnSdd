@@ -1,0 +1,375 @@
+[33mcommit b382ccf74dd7bea1ce6e6ad69cd1c720aa2e7433[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: salonikalsekar <salonikalsekar1@gmail.com>
+Date:   Wed Nov 1 20:49:00 2017 -0400
+
+     adding sprint3
+
+[33mcommit 994881abb06df9f082bf67fe85f63bb0a93f8573[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 31 21:54:41 2017 -0400
+
+    gedcom file sprint 3
+
+[33mcommit f0e056a4236df42d0bb499237a32202ef6ae1203[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 31 21:54:16 2017 -0400
+
+    output
+
+[33mcommit 7083c7f710f3c3fbde5fbb3eba2a97e318425c51[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 31 21:53:57 2017 -0400
+
+    report
+
+[33mcommit 01d8e9f524627eff7e53f62e3c4db82e907fbd65[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 31 21:53:37 2017 -0400
+
+    sprint 3
+
+[33mcommit 8382fecdb03e77b72a1dc5ff7ab9b33123978993[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 31 21:53:16 2017 -0400
+
+    testsprint 3
+
+[33mcommit 60da87bacb41427440e3688bbb748030e8dcfd44[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 31 21:52:19 2017 -0400
+
+    testuserstory08
+
+[33mcommit a16586ffd1d05afed0a1ff1e10e59784ba53095e[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 31 21:43:40 2017 -0400
+
+    testuserstory31
+
+[33mcommit fb6351ff4b9626f4b82cc2594f5c216136a5beda[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 31 21:34:53 2017 -0400
+
+    testuserstory23
+
+[33mcommit 591979635c78b04c470e50cfa419be4243e9daa1[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 31 20:55:49 2017 -0400
+
+    Test case for us 5 6
+
+[33mcommit 4e1ade3da2db4b2f7094bb9923bba97279eb6aaf[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 31 20:55:19 2017 -0400
+
+    testcasesuserstory07
+
+[33mcommit aebd2e8747cc8040b53acb8e107923cc75031a6c[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 31 20:35:39 2017 -0400
+
+    Test for User Story 3, 4
+
+[33mcommit d00a4d65c31e88726a02b4b12c5ebc7299ccb378[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 31 20:34:52 2017 -0400
+
+    Test for user story 10, 14
+
+[33mcommit ab654f4dd12f1fa132f30590ee5e18669eed4522[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 31 20:34:23 2017 -0400
+
+    Test for User story 21, 29
+
+[33mcommit 9d14035a7fb8ccf9c229318500fb2737fce85bc1[m
+Author: salonik14 <salonikalsekar1@gmail.com>
+Date:   Tue Oct 31 20:27:24 2017 -0400
+
+    us 24,32
+
+[33mcommit 9529d5d769a7e1565b14b4c57c8f64213199242f[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 31 20:24:44 2017 -0400
+
+    testuserstory12
+
+[33mcommit 14a75e9348367df45037ff065fccd3dd3f24c0b5[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 31 20:23:03 2017 -0400
+
+    testuserstory16
+
+[33mcommit 350a085b1f4d38312f34dfaec1a5f387f12d7c21[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 31 17:49:39 2017 -0400
+
+    User Story 23 - Unique names and Birth dates
+
+[33mcommit 45d28117ac85f280ebbfe1c0705c7f43ef0efde5[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 31 17:45:04 2017 -0400
+
+    us 30
+
+[33mcommit 8d636170370b5e626cc0692d615424092b4054ae[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 31 17:44:34 2017 -0400
+
+    us 22
+
+[33mcommit a609cdae5c9fc4793b0d61401da3ff8b602c5bf3[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 31 17:29:17 2017 -0400
+
+    List of Single individuals
+
+[33mcommit 7dbf0f115f9e3171dbcf19a36dd4d8c2abac0020[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 31 16:13:56 2017 -0400
+
+    User Story 29
+
+[33mcommit d104080461c241b1f0aeb15e9c20a24d374eb5e2[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 31 16:13:11 2017 -0400
+
+    User Story 21
+
+[33mcommit d64d72dda102e5279debb99d87d4588da19279df[m
+Author: salonik14 <salonikalsekar1@gmail.com>
+Date:   Tue Oct 17 21:34:48 2017 -0400
+
+    adding sprint2 output
+
+[33mcommit eef736fa478cedc7442403f0ef869b4407663e87[m
+Author: salonik14 <salonikalsekar1@gmail.com>
+Date:   Tue Oct 17 21:32:03 2017 -0400
+
+    adding sprint2
+
+[33mcommit d2622662ea98974b786148779f6c8728c13dac7e[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 17 20:03:17 2017 -0400
+
+    15 User story
+
+[33mcommit 99007c307029143328c93eaab083aa6eb6542315[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 17 19:49:50 2017 -0400
+
+    11 User Story
+
+[33mcommit 1dfbdc7866101bb70fe725546b1e49a3f1fe3dae[m
+Author: salonik14 <salonikalsekar1@gmail.com>
+Date:   Tue Oct 17 19:28:28 2017 -0400
+
+    adding us13
+
+[33mcommit ac49f179f4f7555014836a8cd9ec8473ce680204[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 17 19:07:21 2017 -0400
+
+    User Story 14
+
+[33mcommit c95156f682cbc6b02ce1435a65a85f0ee82ef390[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 17 18:57:23 2017 -0400
+
+    user story 16 - Male Last names
+
+[33mcommit c94450ad9207d43cf38571c8409ca96586e14ddc[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 17 18:55:41 2017 -0400
+
+    Delete userStory16.py
+
+[33mcommit 59763431a9689364943ddbcc3bbf7d7f464a4fe0[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 17 18:53:44 2017 -0400
+
+    user story 12 - Parents not too old
+
+[33mcommit 51447c31007b30904afcd3875ed53c85b9faa38f[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 17 18:51:48 2017 -0400
+
+    Update userStory16.py
+
+[33mcommit 8a58221cb91918525f30992e0285b848ece2f74c[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 17 18:45:08 2017 -0400
+
+    User Story 10
+
+[33mcommit 48be76faf85ac777e6bd5d999e7808c7f117c876[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 17 18:44:59 2017 -0400
+
+    user story 16 - Male Last Names
+
+[33mcommit 154a7a472315e0b668db3d019cbff9f69bf76dcf[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 17 18:43:44 2017 -0400
+
+    Delete userStory16.py
+
+[33mcommit c9aafe0a949d0d1b9f2f808e82e87db482927f8d[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 17 18:31:30 2017 -0400
+
+    User Story 16 - Male Last Names
+
+[33mcommit 0267f3f8647abad7a074cb9d757a0fed4401d019[m
+Author: salonik14 <salonikalsekar1@gmail.com>
+Date:   Tue Oct 10 20:10:52 2017 -0400
+
+    adding userstory 09
+
+[33mcommit f291a33a014dd8ece2ca05754dcedb819e33e0bc[m
+Author: salonik14 <salonikalsekar1@gmail.com>
+Date:   Tue Oct 3 19:55:28 2017 -0400
+
+    adding sprint 1 files
+
+[33mcommit 7dfd4659efd1718c582a9d999c2c17b84baeaf71[m
+Author: Saloni Kalsekar <saloniskalsekar@gmail.com>
+Date:   Tue Oct 3 19:42:41 2017 -0400
+
+    changed
+
+[33mcommit a19162da3b834389b492a23439f491c5ce111919[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 3 19:35:33 2017 -0400
+
+    userStory08.py
+    
+    User Story 08 - Birth After Marriage of Parents
+
+[33mcommit 092ab354bd9aba5ee016bbd544ae680e8552d49b[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 3 18:27:50 2017 -0400
+
+    User story 5 - Marriage before Death
+
+[33mcommit 73f132517fc05290b8620504f41a7af6282a31f4[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 3 18:26:58 2017 -0400
+
+    User story 5 - Marriage before Death
+
+[33mcommit 64e2cc1586ea9b1632432cb55e3b18c241ec6a56[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 3 18:25:57 2017 -0400
+
+    User story 5 - Marriage before Death
+
+[33mcommit 51b88981c97a343ad7782f54b607461b80457cb0[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 3 18:25:00 2017 -0400
+
+    User story 06 - Marriage before Death
+
+[33mcommit f15745024f81123e1adb13b03d17ef6c9f8859f2[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 3 18:21:56 2017 -0400
+
+    User Story 6 - Divorce Before Death
+
+[33mcommit 87e049c0a4a9caf155870160ee77655cc8f2de15[m
+Author: salonik14 <salonikalsekar1@gmail.com>
+Date:   Tue Oct 3 17:51:34 2017 -0400
+
+    Adding user story 1,2
+
+[33mcommit 492b0b590982826fb2dc76e1c6dad81401ac8d20[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 3 17:48:43 2017 -0400
+
+    User Story 5- Marriage before Death
+
+[33mcommit 5ffaddf53c2344fc2e0ee6a9c86955e59e6e85da[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 3 17:47:20 2017 -0400
+
+    User Story 6 - Divorce Before Death
+
+[33mcommit 53467a848471a859eeb61d2dc2778730f7d99c67[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 3 17:42:16 2017 -0400
+
+    User Story 5- Marriage before Death
+
+[33mcommit b6adb3ad95116b5bfcff8d4d9c54c877430a897c[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 3 17:36:31 2017 -0400
+
+    US-3: Birth before Death
+
+[33mcommit 2836f393d47dd35d17fe91d274110618bb77db13[m
+Author: Akanksha Chatra <achatra@stevens.edu>
+Date:   Tue Oct 3 17:32:06 2017 -0400
+
+    US-4 : Marriage before Divorce
+
+[33mcommit cd2ee608034a050ff276cbbda4ecdba0f7109e68[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 3 17:27:02 2017 -0400
+
+    User Story 6 - Divorce Before Death
+
+[33mcommit 118b50356dcd419469a4b65943921efb0f413354[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 3 17:26:08 2017 -0400
+
+    User Story 5- Marriage before Death
+
+[33mcommit b681f2642c7d7e7e0bd590ee979145e498caf9eb[m
+Author: achalav <32048745+achalav@users.noreply.github.com>
+Date:   Tue Oct 3 17:19:44 2017 -0400
+
+    Add files via upload
+
+[33mcommit 33fc73fb899feed27caf311264463120f76ce9a8[m
+Author: Sravanthi Kanchi <shravik593@gmail.com>
+Date:   Tue Oct 3 17:18:49 2017 -0400
+
+    userStory07
+    
+    User Story 07 - Age less than 150
+
+[33mcommit 236a8b3bff3d3094558532102fa5fa07c858548e[m
+Author: salonik14 <salonikalsekar1@gmail.com>
+Date:   Tue Sep 26 15:09:16 2017 -0400
+
+    adding excel
+
+[33mcommit 8ce989666c976795385a377eee3a4dbe6e442781[m
+Author: salonik14 <salonikalsekar1@gmail.com>
+Date:   Sun Sep 17 22:53:24 2017 -0400
+
+    added a gedcom file and project 3 code
+
+[33mcommit 7a69cb76b60b266dd68efe62695a81ee8d657833[m
+Author: Saloni Kalsekar <saloniskalsekar@gmail.com>
+Date:   Sun Sep 17 16:57:54 2017 -0400
+
+    updating readme
+
+[33mcommit 6752fa7752bbcdf5aabca6ac873b82052dfbfed1[m
+Author: salonik14 <salonikalsekar1@gmail.com>
+Date:   Sun Sep 17 16:40:39 2017 -0400
+
+    adding gedcom file
+
+[33mcommit e3cea61a029c41ca912c6c2d47caeffb7f380f4b[m
+Author: Saloni Kalsekar <saloniskalsekar@gmail.com>
+Date:   Sun Sep 17 16:27:41 2017 -0400
+
+    editing readme file
+
+[33mcommit ab08ffe2ee9b6fe27381aa980385b55442255af6[m
+Author: Saloni Kalsekar <saloniskalsekar@gmail.com>
+Date:   Sun Sep 17 16:26:51 2017 -0400
+
+    Adding a readme file
