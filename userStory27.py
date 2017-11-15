@@ -1,43 +1,53 @@
 from datetime import datetime
+from datetime import date
+
+def individualList():
+    output_list = [0 for i in range(7)]
+    output_list[5] = []
+    return output_list
 def getLastName(str):
-    tem=''
+    lastName=''
     for i in str:
         if(i != '/'):
-            tem += i
-    return tem
+            lastName += i
+    return lastName
 
-def famList():
-    p_list = [0 for i in range(6)]
-    p_list[5] = []
-    return p_list
+def familyList():
+    output_list = [0 for i in range(6)]
+    output_list[5] = []
+    return output_list
 
-def indiList():
-    p_list = [0 for i in range(7)]
-    p_list[5] = []
-    return p_list
+def getNameByID(list_individual, id):
+    for i in list_individual:
+        if(i[0] == id):
+            return i[1]
         
-def DateFormat(date):
-    t = date.split()
-    if(t[1] == 'JAN'): t[1] = '01';
-    if(t[1] == 'FEB'): t[1] = '02';
-    if(t[1] == 'MAR'): t[1] = '03';
-    if(t[1] == 'APR'): t[1] = '04';
-    if(t[1] == 'MAY'): t[1] = '05';
-    if(t[1] == 'JUN'): t[1] = '06';
-    if(t[1] == 'JUL'): t[1] = '07';
-    if(t[1] == 'AUG'): t[1] = '08';
-    if(t[1] == 'SEP'): t[1] = '09';
-    if(t[1] == 'OCT'): t[1] = '10';
-    if(t[1] == 'NOV'): t[1] = '11';
-    if(t[1] == 'DEC'): t[1] = '12';
-    if(t[2] in ['1', '2', '3', '4', '5', '6', '7', '8', '9']):
-        t[2] = '0' + t[2]
-    return (t[0] + '-' + t[1] + '-' + t[2])
-
-
-def individualAges(IndList):
+def getBirthDateByID(list_indi, id):
+    for i in list_indi:
+        if(i[0] == id):
+            return i[3]
+            
+def dateFormatConversion(date):
+    m = date.split()
+    if(m[1] == 'JAN'): m[1] = '01';
+    if(m[1] == 'FEB'): m[1] = '02';
+    if(m[1] == 'MAR'): m[1] = '03';
+    if(m[1] == 'APR'): m[1] = '04';
+    if(m[1] == 'MAY'): m[1] = '05';
+    if(m[1] == 'JUN'): m[1] = '06';
+    if(m[1] == 'JUL'): m[1] = '07';
+    if(m[1] == 'AUG'): m[1] = '08';
+    if(m[1] == 'SEP'): m[1] = '09';
+    if(m[1] == 'OCT'): m[1] = '10';
+    if(m[1] == 'NOV'): m[1] = '11';
+    if(m[1] == 'DEC'): m[1] = '12';
+    if(m[2] in ['1', '2', '3', '4', '5', '6', '7', '8', '9']):
+        m[2] = '0' + m[2]
+    return (m[0] + '-' + m[1] + '-' + m[2])
+     
+def individualAges(list_individual):
     individualAgesList = []
-    for i in (IndList):
+    for i in (list_individual):
         if (i[3] != 0):
             dateOfBirth = i[3]
         #print(dateOfBirth)
@@ -50,73 +60,72 @@ def individualAges(IndList):
                 print ("User story 27, Individual " + i[1] +" with age: " + str(age))
             else:
                 currentAge = datetime.now().year - birthDate.year
-                print ("User story 27, Individual " + i[1] +" with age: " + str(currentAge))
-                
-        
-def parseTheFile(fileName):
-    f = open(fileName,'r')
-    indiOn = 0
-    famOn = 0
-    indi = indiList()
-    fam = famList()
-    listIndi = []
-    listFam = []  
+                print ("User story 27, Individual " + i[1] +" with age: " + str(currentAge))      
+              
+def toParse(gedFileName):
+    f = open(gedFileName,'r')
+    list_individual = []
+    list_family = []
+    indi_on = 0
+    fam_on = 0
+    individual = individualList()
+    family = familyList()
     for line in f:
         str = line.split()
         if(str != []):
             if(str[0] == '0'):
-                if(indiOn == 1):
-                    listIndi.append(indi)
-                    indi = indiList()
-                    indiOn = 0
-                if(famOn == 1):
-                    listFam.append(fam)
-                    fam = famList()
-                    famOn = 0
+                if(fam_on == 1):
+                    list_family.append(family)
+                    family = familyList()
+                    fam_on = 0
+                if(indi_on == 1):
+                    list_individual.append(individual)
+                    individual = individualList()
+                    indi_on = 0               
                 if(str[1] in ['NOTE', 'HEAD', 'TRLR']):
                     pass
                 else:
                     if(str[2] == 'INDI'):
-                        indiOn = 1
-                        indi[0] = (str[1])
+                        indi_on = 1
+                        individual[0] = (str[1])
                     if(str[2] == 'FAM'):
-                        famOn = 1
-                        fam[0] = (str[1])
+                        fam_on = 1
+                        family[0] = (str[1])
             if(str[0] == '1'):
                 if(str[1] == 'NAME'):
-                    indi[1] = str[2] + " " + getLastName(str[3])
+                    individual[1] = str[2] + " " + getLastName(str[3])
                 if(str[1] == 'SEX'):
-                    indi[2] = str[2]
+                    individual[2] = str[2]
                 if(str[1] == 'FAMS'):
-                    indi[5].append(str[2])
+                    individual[5].append(str[2])
                 if(str[1] == 'FAMC'):
-                    indi[6] = str[2]
+                    individual[6] = str[2]
                 if(str[1] == 'HUSB'):
-                    fam[1] = str[2]
+                    family[1] = str[2]
                 if(str[1] == 'WIFE'):
-                    fam[2] = str[2]
+                    family[2] = str[2]
                 if(str[1] == 'CHIL'):
-                    fam[5].append(str[2])
+                    family[5].append(str[2])
                 if(str[1] in ['BIRT', 'DEAT', 'MARR', 'DIV']):
-                    date_id = str[1]
+                    date_id = str[1]                                
             if(str[0] == '2'):
                 if(str[1] == 'DATE'):
                     date = str[4] + " " + str[3] + " " + str[2]
-                    if(date_id == 'BIRT'):
-                        indi[3] = DateFormat(date)
-                    if(date_id == 'DEAT'):
-                        indi[4] = DateFormat(date)
                     if(date_id == 'MARR'):
-                        fam[3] = DateFormat(date)
+                        family[3] = dateFormatConversion(date)
                     if(date_id == 'DIV'):
-                        fam[4] = DateFormat(date)
-    return listIndi, listFam
+                        family[4] = dateFormatConversion(date)
+                    if(date_id == 'BIRT'):
+                        individual[3] = dateFormatConversion(date)
+                    if(date_id == 'DEAT'):
+                        individual[4] = dateFormatConversion(date)
+                    
+    return list_individual,list_family
 
-def main(fileName):
-    listIndi, listFam = parseTheFile(fileName)
-    listIndi.sort()
-    listFam.sort()
-    individualAges(listIndi)
+def main(gedFileName):
+    list_individual, list_family= toParse(gedFileName)
+    list_individual.sort()
+    list_family.sort()
+    individualAges(list_individual)
 
-main('C:/Users/Lenovo/Desktop/Homewrk_4_Achal/Achal Project01.ged')
-
+main('D:/SSW-555/Week 5/Akanksha_Homework 4/Homework 4/akankshaGedcom.ged')
