@@ -136,14 +136,14 @@ def getAgeByID(ind_list, id):
     return c_year - b_year - ((c_month, c_date) < (b_month, b_date))
 
 
-def large_diff_couple():
-    result=[]
+def large_difference_couple():
+    ans = []
     for i in range(len(Family.famlist)):
         ft=Family.famlist[i]
         a=getage(ft.husband.date_of_birth)/getage(ft.wife.date_of_birth)
         if a>=2 or a<=0.5:
-            result.append(ft)
-    return result
+            ans.append(ft)
+    return ans
 
 
 ##def listLivingSingle(list_indi):
@@ -256,31 +256,11 @@ list_indi, list_fam = parse(file)
 
 
 
-#large_diff_couple()
-
-
-r =large_diff_couple()
+r =large_difference_couple()
 for i in range(len(r)):
     f=r[i]
     print('User Story 34:Family with unique id:'+f.id+' has a large age difference')
     print('User Story 34:Family with unique id:'+f.id+' has a large age difference')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
